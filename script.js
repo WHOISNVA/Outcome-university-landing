@@ -17,4 +17,31 @@
   document.querySelectorAll(".join-link").forEach(function (el) {
     el.setAttribute("href", JOIN_URL);
   });
+
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!prefersReducedMotion) {
+    var observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -80px 0px"
+    };
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    var animateElements = document.querySelectorAll(
+      ".section:not(.hero), .punch, .consist-card, .testimonial-card, .filter-block, .doctrine li"
+    );
+
+    animateElements.forEach(function (el) {
+      el.classList.add("animate-target");
+      observer.observe(el);
+    });
+  }
 })();
