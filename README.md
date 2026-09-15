@@ -10,7 +10,7 @@ Static single-page site for **Outcome University** (school), **Outcome Engineeri
 
 **Thesis:** Outcome Engineering is the last job that will ever exist in this AI age. Outcome University teaches people everything they need to become one.
 
-- **Domain target:** [novannaoji.online](https://novannaoji.online)
+- **Domain target:** [outcome.university](https://outcome.university)
 - **Primary CTA:** Join Outcome University / Join the University (Skool)
 - **Stack:** HTML + CSS + minimal JS (no build step)
 
@@ -84,7 +84,7 @@ python3 -m http.server 8080
 
 Or open `index.html` directly in a browser.
 
-## Deploy to novannaoji.online
+## Deploy to outcome.university
 
 Point the domain’s DNS to your static host, then publish this folder as the site root (`index.html`, `styles.css`, `script.js`, and hero PNG at deploy root).
 
@@ -93,24 +93,24 @@ Point the domain’s DNS to your static host, then publish this folder as the si
 1. Push this folder to a Git repo (or drag-and-drop in Netlify UI).
 2. New site → import repo (or manual deploy).
 3. **Publish directory:** `/` (or the folder containing `index.html`). No build command.
-4. Domain: Site settings → Domain management → Add `novannaoji.online` (and `www` if desired).
+4. Domain: Site settings → Domain management → Add `outcome.university` (and `www` if desired).
 
 ### Vercel
 
 1. Connect the Git repo at [vercel.com](https://vercel.com) or use Vercel CLI.
 2. Import → root = this folder. Framework: **Other**. Build: none. Output: `.`
-3. Deploy → Settings → Domains → add `novannaoji.online`.
+3. Deploy → Settings → Domains → add `outcome.university`.
 
 ### Cloudflare Pages
 
 1. Workers & Pages → Create → Pages.
 2. Connect Git, or Direct Upload.
 3. Build command: empty. Output directory: `/` (or `.`).
-4. Custom domains → add `novannaoji.online`.
+4. Custom domains → add `outcome.university`.
 
 ### Any static host
 
-Upload `index.html`, `styles.css`, `script.js`, and the ladder PNG(s) to the web root. Attach TLS and map `novannaoji.online` via DNS.
+Upload `index.html`, `styles.css`, `script.js`, and the ladder PNG(s) to the web root. Attach TLS and map `outcome.university` via DNS.
 
 ## Brand checklist (do not ship violations)
 
@@ -142,7 +142,7 @@ Upload `index.html`, `styles.css`, `script.js`, and the ladder PNG(s) to the web
 
 - Title / OG: `Outcome University · Become an Outcome Engineer`
 - Description carries University (school) + Engineering (last job) thesis
-- Canonical: `https://novannaoji.online/`
+- Canonical: `https://outcome.university/`
 - OG image points at `ladder-atmosphere.png` on the live domain
 
 ## Accessibility & motion
