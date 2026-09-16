@@ -49,13 +49,13 @@ Everything centered. Copy rail ~38-42rem (`--rail: 40rem`). Black + gold theme.
 Default:
 
 ```text
-https://www.skool.com/outcome-engineering
+https://www.skool.com/tech-founder-pro-2154/about
 ```
 
 **Preferred:** edit the `data-join-url` attribute on `<body>` in `index.html`:
 
 ```html
-<body data-join-url="https://www.skool.com/outcome-engineering">
+<body data-join-url="https://www.skool.com/tech-founder-pro-2154/about">
 ```
 
 `script.js` reads that attribute and applies it to every `.join-link`. You can also change the `JOIN_URL` constant at the top of `script.js` as a fallback.
