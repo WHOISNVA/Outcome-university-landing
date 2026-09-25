@@ -23,7 +23,7 @@
   --font-sans: "DM Sans", system-ui, sans-serif;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --header-h: 4.25rem;
+  --header-h: 4.9rem;
   --announce-h: 2.75rem;
   --radius: 1.15rem;
   --radius-sm: 0.75rem;
@@ -213,8 +213,8 @@ body.announce-dismissed .announce {
 
 .brand-mark {
   display: block;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.15rem;
+  height: 3.15rem;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -227,13 +227,13 @@ body.announce-dismissed .announce {
 
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
 
 .brand-sub {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--gold);
