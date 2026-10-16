@@ -408,6 +408,12 @@ a.btn-primary:hover,
   max-width: 100%;
 }
 
+.hero-visual {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
 .kicker {
   margin: 0 0 0.85rem;
   font-size: 0.72rem;
