@@ -387,7 +387,6 @@ a.btn-primary:hover,
 
 .hero-shell,
 .hero-copy,
-.hero-visual,
 .split,
 .split-visual,
 .shell,
@@ -452,32 +451,23 @@ a.btn-primary:hover,
   font-size: 0.9rem;
 }
 
-.hero-visual {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .hero-quote {
   position: relative;
-  margin: 1.35rem 0 0;
+  margin: 1.5rem 0 0;
   padding-top: 1.15rem;
   display: grid;
   gap: 0.4rem;
-  max-width: 18rem;
-  text-align: center;
+  max-width: 26rem;
 }
 
 .hero-quote::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   width: 4.5rem;
   height: 1px;
-  transform: translateX(-50%);
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  background: linear-gradient(90deg, var(--gold), transparent);
 }
 
 .hero-quote-line {
@@ -494,15 +484,6 @@ a.btn-primary:hover,
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
-}
-
-.frame.portrait.hero-portrait {
-  max-width: 16rem;
-  margin: 0;
-  box-shadow:
-    0 30px 80px rgb(0 0 0 / 0.55),
-    0 0 0 1px rgb(255 255 255 / 0.04),
-    0 0 80px var(--gold-glow);
 }
 
 .device {
@@ -1503,20 +1484,14 @@ a.btn-primary:hover,
     padding: 4.25rem 0 2.25rem;
   }
 
-  .hero-shell,
   .split,
   .split.reverse {
     grid-template-columns: 1.05fr 0.95fr;
     gap: 3.5rem;
   }
 
-  .hero-visual {
-    justify-content: center;
-  }
-
-  .frame.portrait.hero-portrait {
-    max-width: 18rem;
-    width: 18rem;
+  .hero-copy {
+    max-width: 46rem;
   }
 
   .split.reverse .split-copy {
