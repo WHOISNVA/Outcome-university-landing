@@ -400,6 +400,7 @@ a.btn-primary:hover,
   display: grid;
   gap: 2.5rem;
   align-items: center;
+  grid-template-columns: 1fr;
 }
 
 .hero-copy {
@@ -610,8 +611,9 @@ a.btn-primary:hover,
 }
 
 .section-head {
-  max-width: 40rem;
-  margin-bottom: var(--space-xl);
+  max-width: 45rem;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
 }
 
 .section h2,
@@ -893,12 +895,13 @@ a.btn-primary:hover,
 
 /* --- Thesis stack --- */
 .thesis-stack {
-  max-width: 48rem;
+  max-width: 45rem;
   margin: 0 auto;
+  text-align: center;
 }
 
 .thesis-stack p {
-  margin: 0 0 1.25rem;
+  margin: 0 auto 1.25rem;
   font-size: 1.08rem;
   line-height: 1.7;
   color: var(--ivory-dim);
@@ -955,7 +958,8 @@ a.btn-primary:hover,
 }
 
 .contrast-line {
-  margin-top: 1.75rem;
+  margin: 1.75rem auto 0;
+  max-width: 45rem;
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-style: italic;
@@ -971,14 +975,18 @@ a.btn-primary:hover,
 }
 
 .objection-proof > h3 {
-  margin: 0 0 0.55rem;
+  margin: 0 auto 0.55rem;
+  max-width: 45rem;
   font-family: var(--font-serif);
   font-size: 1.55rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .objection-proof > .lede {
-  margin-bottom: 1.75rem;
+  margin: 0 auto 1.75rem;
+  max-width: 45rem;
+  text-align: center;
 }
 
 .testimonial-featured {
@@ -1028,7 +1036,10 @@ a.btn-primary:hover,
 .for-grid .panel {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   min-height: 5rem;
+  padding: 1.75rem 1.5rem;
 }
 
 .for-grid .panel p {
@@ -1038,7 +1049,8 @@ a.btn-primary:hover,
 }
 
 .filter-line {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 45rem;
   text-align: center;
   font-style: italic;
 }
@@ -1046,12 +1058,12 @@ a.btn-primary:hover,
 /* --- Pricing tagline --- */
 .pricing-tagline {
   margin: 2rem auto 0;
+  max-width: 45rem;
   text-align: center;
   font-family: var(--font-serif);
   font-size: 1.15rem;
   font-style: italic;
   color: var(--gold);
-  max-width: 32rem;
 }
 
 .section-cta {
@@ -1646,6 +1658,11 @@ a.btn-primary:hover,
 
   .hero {
     padding: 4.25rem 0 2.25rem;
+  }
+
+  .hero-shell {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3.5rem;
   }
 
   .split,
