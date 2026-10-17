@@ -129,4 +129,31 @@
   if (pills && !prefersReducedMotion && window.matchMedia("(min-width: 880px)").matches) {
     pills.innerHTML = pills.innerHTML + pills.innerHTML;
   }
+
+  // Video player
+  var video = document.getElementById("hero-video");
+  var playBtn = document.getElementById("video-play-btn");
+  
+  if (video && playBtn) {
+    playBtn.addEventListener("click", function () {
+      video.play();
+      video.setAttribute("controls", "controls");
+      video.classList.add("playing");
+      playBtn.classList.add("hidden");
+    });
+
+    video.addEventListener("pause", function () {
+      if (video.currentTime === 0 || video.ended) {
+        video.removeAttribute("controls");
+        video.classList.remove("playing");
+        playBtn.classList.remove("hidden");
+      }
+    });
+
+    video.addEventListener("ended", function () {
+      video.removeAttribute("controls");
+      video.classList.remove("playing");
+      playBtn.classList.remove("hidden");
+    });
+  }
 })();
