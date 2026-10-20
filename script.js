@@ -130,7 +130,7 @@
     pills.innerHTML = pills.innerHTML + pills.innerHTML;
   }
 
-  // Video player
+  // Hero video player
   var video = document.getElementById("hero-video");
   var playBtn = document.getElementById("video-play-btn");
   
@@ -140,6 +140,14 @@
       video.setAttribute("controls", "controls");
       video.classList.add("playing");
       playBtn.classList.add("hidden");
+    });
+
+    video.addEventListener("click", function () {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
     });
 
     video.addEventListener("pause", function () {
